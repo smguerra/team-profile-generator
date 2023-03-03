@@ -137,17 +137,19 @@ function presentMenu() {
     inquirer 
         .prompt([
             {
+                
+                
                 type: "list",
                 message: "What kind of team member do you want to add next?",
                 name: "role",
-                choices: ["Engineer", "Intern", "I dont want to add any more tema members"]
+                choices: ["Add an engineer", "Add an intern", "Finish building the team"]
             }
         ])
 
         .then(userChoice => {
-           if (userChoice.role === "Engineer") {
+           if (userChoice.role === "Add an engineer") {
             addEngineer();
-           } else if (userChoice.role === "Intern") {
+           } else if (userChoice.role === "Add an intern") {
             addIntern();
            } else {
             writeToFile();
