@@ -13,8 +13,44 @@ const render = require("./src/page-template.js");
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 
-const inquirer = require("inquirer");
-const Engineer = require("./lib/Engineer");
+//const inquirer = require("inquirer");
+//const Manager = require("./lib/Manager");
+
+inquirer
+    .prompt([
+        {
+            type: "input",
+            message: "Please enter the manager's name",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "Please enter the manager's Id",
+            name: "id"
+        },
+        {
+            type: "input",
+            message: "Please enter the manager's email address",
+            name: "email"
+        },
+        {
+            type: "input",
+            message: "Please enter the manager's office number",
+            name: "officeNumber"
+        }
+    ])
+    .then(answers => {
+        const manager = new Manager(
+            answers.name,
+            answers.id,
+            answers.email,
+            answers.officeNumber
+        );
+        console.log(manager);
+    });
+
+// const inquirer = require("inquirer");
+// const Engineer = require("./lib/Engineer");
 
 inquirer
     .prompt([
@@ -39,4 +75,30 @@ inquirer
             name: "github"
         }
     ])
-    .then(())
+
+    inquirer
+    .prompt([
+        {
+            type: "input",
+            message: "Please enter the intern's name",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "Please enter the intern's Id",
+            name: "id"
+        },
+        {
+            type: "input",
+            message: "Please enter the intern's email",
+            name: "email"
+        },
+        {
+            type: "input",
+            message: "Please enter the intern's school",
+            name: "github"
+        }
+    ])
+
+
+    
