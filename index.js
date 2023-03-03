@@ -13,3 +13,30 @@ const render = require("./src/page-template.js");
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 
+const inquirer = require("inquirer");
+const Engineer = require("./lib/Engineer");
+
+inquirer
+    .prompt([
+        {
+            type: "input",
+            message: "Please enter the engineer's name",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "Please enter the engineer's Id",
+            name: "id"
+        },
+        {
+            type: "input",
+            message: "Please enter the engineer's email",
+            name: "email"
+        },
+        {
+            type: "input",
+            message: "Please enter the engineer's github user name",
+            name: "github"
+        }
+    ])
+    .then(())
