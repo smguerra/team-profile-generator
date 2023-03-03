@@ -91,4 +91,3 @@ If you have any questions about the repo, feel free to contact me on [GitHub](ht
 
 - Sandra Guerra
 
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
