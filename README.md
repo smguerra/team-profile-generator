@@ -21,7 +21,7 @@ As a manager a user want to generate a webpage that displays my team's basic inf
 * [Usage](#usage) 
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#test)
+* [Test](#test)
 * [Questions](#questions)
 * [Screenshot](#screenshot)
 * [Tech-Stack](#tech-stack)
@@ -59,7 +59,7 @@ None
 Users can contact the repo's owner for more information.
 
 
-## Tests
+## Test
 
 N/A
 
