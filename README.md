@@ -73,8 +73,7 @@ If you have any questions about the repo, feel free to contact me on [GitHub](ht
 ## Screenshot
 
 
-![screenshot](https://user-images.githubusercontent.com/118385737/222845488-eae2a81d-ed2b-4279-bb8f-10eb0bc9ebef.png)
-
+![screenshot1](https://user-images.githubusercontent.com/118385737/222846876-3bdae8eb-41a0-421f-acc2-f95c8603fa99.png)
 
 ## Tech-Stack
 
