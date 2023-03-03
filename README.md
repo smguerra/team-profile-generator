@@ -66,7 +66,7 @@ N/A
 
 ## Questions
     
-If you have any questions about the repo, feel free to contact me on [GitHub](https://github.com/smguerra). you can find more information at: https://github.com/smguerra/team-profile-generator
+If you have any questions about the repo, feel free to contact me on [GitHub](https://github.com/smguerra). you can find more information at: https://smguerra.github.io/team-profile-generator/
 
 ## Screenshot
 
@@ -83,8 +83,8 @@ If you have any questions about the repo, feel free to contact me on [GitHub](ht
 ## Links to the deployed application and the GitHub repository
 
 
-- Live Site URL:  https://samueltuki.github.io/iRecipe/
-- Project URL: https://github.com/samueltuki/iRecipe
+- Live Site URL: https://smguerra.github.io/team-profile-generator/
+- Project URL: https://github.com/smguerra/team-profile-generator
 
 
 ## Author
