@@ -59,6 +59,8 @@ inquirer
 // const inquirer = require("inquirer");
 // const Engineer = require("./lib/Engineer");
 
+function addEngineer() {
+
 inquirer
     .prompt([
         {
@@ -83,6 +85,20 @@ inquirer
         }
     ])
 
+    .then(answers => {
+        const engineer = new Engineer(
+            answers.name,
+            answers.id,
+            answers.email,
+            answers.github
+        );
+        teamMembers.push(engineer);
+        presentMenu();
+    });
+}
+
+function addIntern () {
+
     inquirer
     .prompt([
         {
@@ -106,6 +122,6 @@ inquirer
             name: "github"
         }
     ])
-
+}
 
     
