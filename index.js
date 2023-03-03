@@ -17,6 +17,7 @@ const teamMembers = [];
 //const inquirer = require("inquirer");
 //const Manager = require("./lib/Manager");
 
+function startProgram() {
 
 function addManager() {
 
@@ -97,7 +98,7 @@ inquirer
     });
 }
 
-function addIntern () {
+function addIntern() {
 
     inquirer
     .prompt([
@@ -119,9 +120,51 @@ function addIntern () {
         {
             type: "input",
             message: "Please enter the intern's school",
-            name: "github"
+            name: "school"
         }
+ 
     ])
+    .then(answers => {
+        const intern = new Intern(
+            answers.name,
+            answers.id,
+            answers.email,
+            answers.school
+        );
+        teamMembers.push(intern);
+        presentMenu();
+    });
 }
 
+function presentMenu() {
+    inquirer 
+        .prompt([
+            {
+                type: "list",
+                message: "What kind of team member do you want to add next?",
+                name: "role",
+                choices: ["Engineer", "Intern", "I dont want to add any more tema members"]
+            }
+        ])
+
+        .then(userChoice => {
+           if (userChoice.role === "Engineer") {
+            addEngineer();
+           } else if (userChoice.role === "Intern") {
+            addIntern();
+           } else {
+            writeToFile();
+           }
+        });
+}
+
+function writeToFile() {
+    fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
+}
+
+addManager();
+
+}
+
+startProgram();
     
