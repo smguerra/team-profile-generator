@@ -12,6 +12,7 @@ Team Profile Generator is a working Node.js command-line application. This appli
 
 ## User Story
 
+
 As a manager a user want to generate a webpage that displays my team's basic info so that a user have quick access to their emails and GitHub profiles.
 
 
@@ -68,8 +69,11 @@ N/A
     
 If you have any questions about the repo, feel free to contact me on [GitHub](https://github.com/smguerra). you can find more information at: https://smguerra.github.io/team-profile-generator/
 
+
 ## Screenshot
 
+
+![screenshot1](https://user-images.githubusercontent.com/118385737/222846876-3bdae8eb-41a0-421f-acc2-f95c8603fa99.png)
 
 ## Tech-Stack
 
