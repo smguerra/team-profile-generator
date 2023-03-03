@@ -14,9 +14,6 @@ const teamMembers = [];
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 
-//const inquirer = require("inquirer");
-//const Manager = require("./lib/Manager");
-
 function startProgram() {
 
 function addManager() {
@@ -163,8 +160,8 @@ function writeToFile() {
 }
 
 addManager();
-
 }
 
 startProgram();
+
     
